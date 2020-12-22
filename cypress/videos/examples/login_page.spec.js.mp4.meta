@@ -1,0 +1,16 @@
+;FFMETADATA1
+[CHAPTER]
+TIMEBASE=1/1000
+START=2740
+END=5411
+title=Test login funcationlity  Open URL
+[CHAPTER]
+TIMEBASE=1/1000
+START=4731
+END=8085
+title=Test login funcationlity  Login Into Application
+[CHAPTER]
+TIMEBASE=1/1000
+START=10625
+END=11442
+title=Test login funcationlity  Logout From Application
