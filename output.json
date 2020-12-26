@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2020-12-23T06:02:38.176Z",
-    "end": "2020-12-23T06:02:58.775Z",
-    "duration": 14076,
+    "start": "2020-12-26T04:38:53.031Z",
+    "end": "2020-12-26T04:39:15.852Z",
+    "duration": 16529,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3d695bd4-387e-499c-bd95-fbdc7174207b",
+      "uuid": "a3054db4-639e-43c2-8fc1-d84094efdc2a",
       "title": "",
       "fullFile": "cypress/integration/examples/login_page.spec.js",
       "file": "cypress/integration/examples/login_page.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "181c9148-e62f-4454-a519-8fcfefa7059a",
+          "uuid": "8f782d84-3f1c-4dbf-a52e-01597c3c8521",
           "title": "Test login funcationlity ",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Open URL",
               "fullTitle": "Test login funcationlity  Open URL",
               "timedOut": null,
-              "duration": 2822,
+              "duration": 7006,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.visit(\"http://www.testyou.in/Login.aspx\");",
               "err": {},
-              "uuid": "83bb5243-c5a7-4dec-b72a-4b3aeee47294",
-              "parentUUID": "181c9148-e62f-4454-a519-8fcfefa7059a",
+              "uuid": "6787d79c-0e47-4f3f-8b02-4d57ac697826",
+              "parentUUID": "8f782d84-3f1c-4dbf-a52e-01597c3c8521",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Login Into Application",
               "fullTitle": "Test login funcationlity  Login Into Application",
               "timedOut": null,
-              "duration": 6434,
+              "duration": 4246,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.get('#ctl00_CPHContainer_txtUserLogin').type('kailash1980');\ncy.get('#ctl00_CPHContainer_txtPassword').type('Sonie8088');\ncy.get('#ctl00_CPHContainer_btnLoginn').click();",
               "err": {},
-              "uuid": "4e094769-fdf6-4efb-94ce-f23940305de0",
-              "parentUUID": "181c9148-e62f-4454-a519-8fcfefa7059a",
+              "uuid": "158c21c8-6eb8-4522-be26-8b5a8097f687",
+              "parentUUID": "8f782d84-3f1c-4dbf-a52e-01597c3c8521",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Logout From Application",
               "fullTitle": "Test login funcationlity  Logout From Application",
               "timedOut": null,
-              "duration": 1635,
+              "duration": 1747,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "cy.get('#ctl00_headerTopStudent_lnkbtnSignout').click();",
               "err": {},
-              "uuid": "7376220d-fb9f-4135-8cd9-efbe80819be7",
-              "parentUUID": "181c9148-e62f-4454-a519-8fcfefa7059a",
+              "uuid": "1a2be675-4e85-40c6-817e-83504aa50d00",
+              "parentUUID": "8f782d84-3f1c-4dbf-a52e-01597c3c8521",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "83bb5243-c5a7-4dec-b72a-4b3aeee47294",
-            "4e094769-fdf6-4efb-94ce-f23940305de0",
-            "7376220d-fb9f-4135-8cd9-efbe80819be7"
+            "6787d79c-0e47-4f3f-8b02-4d57ac697826",
+            "158c21c8-6eb8-4522-be26-8b5a8097f687",
+            "1a2be675-4e85-40c6-817e-83504aa50d00"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 10891,
+          "duration": 12999,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -114,7 +114,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "67b19a5f-41cb-456d-9d35-dfc1465cb521",
+      "uuid": "87ae1991-0a08-40b8-a083-7d0fd9416e43",
       "title": "",
       "fullFile": "cypress/integration/examples/viewport.spec.js",
       "file": "cypress/integration/examples/viewport.spec.js",
@@ -123,7 +123,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c0748ed2-02e4-4326-b8ac-5ec57ccbd2ea",
+          "uuid": "a5ef010f-c2d9-4969-9e64-cbfe3fbde1c0",
           "title": "Viewport",
           "fullFile": "",
           "file": "",
@@ -134,7 +134,7 @@
               "title": "cy.viewport() - set the viewport size and dimension",
               "fullTitle": "Viewport cy.viewport() - set the viewport size and dimension",
               "timedOut": null,
-              "duration": 3185,
+              "duration": 3530,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -143,20 +143,20 @@
               "context": null,
               "code": "// https://on.cypress.io/viewport\ncy.get('#navbar').should('be.visible');\ncy.viewport(320, 480); // the navbar should have collapse since our screen is smaller\ncy.get('#navbar').should('not.be.visible');\ncy.get('.navbar-toggle').should('be.visible').click();\ncy.get('.nav').find('a').should('be.visible'); // lets see what our app looks like on a super large screen\ncy.viewport(2999, 2999); // cy.viewport() accepts a set of preset sizes\n// to easily set the screen to a device's width and height\n// We added a cy.wait() between each viewport change so you can see\n// the change otherwise it is a little too fast to see :)\ncy.viewport('macbook-15');\ncy.wait(200);\ncy.viewport('macbook-13');\ncy.wait(200);\ncy.viewport('macbook-11');\ncy.wait(200);\ncy.viewport('ipad-2');\ncy.wait(200);\ncy.viewport('ipad-mini');\ncy.wait(200);\ncy.viewport('iphone-6+');\ncy.wait(200);\ncy.viewport('iphone-6');\ncy.wait(200);\ncy.viewport('iphone-5');\ncy.wait(200);\ncy.viewport('iphone-4');\ncy.wait(200);\ncy.viewport('iphone-3');\ncy.wait(200); // cy.viewport() accepts an orientation for all presets\n// the default orientation is 'portrait'\ncy.viewport('ipad-2', 'portrait');\ncy.wait(200);\ncy.viewport('iphone-4', 'landscape');\ncy.wait(200); // The viewport will be reset back to the default dimensions\n// in between tests (the  default can be set in cypress.json)",
               "err": {},
-              "uuid": "263802b9-bb83-4058-8a29-7cf3d38f08bc",
-              "parentUUID": "c0748ed2-02e4-4326-b8ac-5ec57ccbd2ea",
+              "uuid": "4d384af7-33c2-449c-8da7-bb87107108bc",
+              "parentUUID": "a5ef010f-c2d9-4969-9e64-cbfe3fbde1c0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "263802b9-bb83-4058-8a29-7cf3d38f08bc"
+            "4d384af7-33c2-449c-8da7-bb87107108bc"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3185,
+          "duration": 3530,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
