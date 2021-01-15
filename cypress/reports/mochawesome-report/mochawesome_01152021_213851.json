@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2021-01-15T14:18:10.990Z",
-    "end": "2021-01-15T14:18:22.732Z",
-    "duration": 11742,
+    "start": "2021-01-15T16:08:41.401Z",
+    "end": "2021-01-15T16:08:51.115Z",
+    "duration": 9714,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e3e745b1-2a43-493f-a4d9-36ad433dc330",
+      "uuid": "73956d76-0db4-4b95-bfb5-251dbe5f4059",
       "title": "",
       "fullFile": "cypress/integration/examples/login_page.spec.js",
       "file": "cypress/integration/examples/login_page.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "feb5856e-5de9-41c4-b628-e09117ef7885",
+          "uuid": "2049f65d-91ad-4dae-a1d4-1db1e466d140",
           "title": "Test login funcationlity ",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Open URL",
               "fullTitle": "Test login funcationlity  Open URL",
               "timedOut": null,
-              "duration": 3525,
+              "duration": 3307,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.visit(\"http://www.testyou.in/Login.aspx\");",
               "err": {},
-              "uuid": "3b55acaa-3110-4155-a8d8-7a003409d59d",
-              "parentUUID": "feb5856e-5de9-41c4-b628-e09117ef7885",
+              "uuid": "5696e21c-271e-4fae-b3e3-75813111039b",
+              "parentUUID": "2049f65d-91ad-4dae-a1d4-1db1e466d140",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Login Into Application",
               "fullTitle": "Test login funcationlity  Login Into Application",
               "timedOut": null,
-              "duration": 5564,
+              "duration": 3379,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.get('#ctl00_CPHContainer_txtUserLogin').type('kailash1980');\ncy.get('#ctl00_CPHContainer_txtPassword').type('Sonie8088');\ncy.get('#ctl00_CPHContainer_btnLoginn').click();",
               "err": {},
-              "uuid": "548e85ea-8ddf-431d-82e0-b716b4a4d97e",
-              "parentUUID": "feb5856e-5de9-41c4-b628-e09117ef7885",
+              "uuid": "d67b9ad1-7368-4a34-a6a1-34879aa67f00",
+              "parentUUID": "2049f65d-91ad-4dae-a1d4-1db1e466d140",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Logout From Application",
               "fullTitle": "Test login funcationlity  Logout From Application",
               "timedOut": null,
-              "duration": 950,
+              "duration": 1404,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "cy.get('#ctl00_headerTopStudent_lnkbtnSignout').click();",
               "err": {},
-              "uuid": "5f2bd421-38e0-458d-bdad-579793d168da",
-              "parentUUID": "feb5856e-5de9-41c4-b628-e09117ef7885",
+              "uuid": "76338bfe-b1bf-42b9-ab87-2c92432c7c5f",
+              "parentUUID": "2049f65d-91ad-4dae-a1d4-1db1e466d140",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3b55acaa-3110-4155-a8d8-7a003409d59d",
-            "548e85ea-8ddf-431d-82e0-b716b4a4d97e",
-            "5f2bd421-38e0-458d-bdad-579793d168da"
+            "5696e21c-271e-4fae-b3e3-75813111039b",
+            "d67b9ad1-7368-4a34-a6a1-34879aa67f00",
+            "76338bfe-b1bf-42b9-ab87-2c92432c7c5f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 10039,
+          "duration": 8090,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
