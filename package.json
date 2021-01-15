@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cleanup": "rm -fr cypress/reports",
-    "merge_reports": "mochawesome-merge cypress/reports/mochawesome-report/*.json > output.json",
-    "mochawesome_report": "marge --reportDir cypress/reports/mochawesome-html-report -t Cypress_Test_Report -p Cypress_HMTL_Report -f Cypress_HMTL_Report --charts true output.json",
-    "cy:report": "npm run cleanup && cypress run && npm run merge_reports && npm run mochawesome_report"
+    "clean:reports": "rimraf cypress/report",
+    "pre-test-run": "yarn clean:reports",
+    "cy:test": "cypress run --headless --browser chrome",
+    "combine-reports": "mochawesome-merge cypress/report/*.json>cypress/report/output.json",
+    "generate-reports": "marge cypress/report/output.json --reportDir ./ --inline",
+    "post-test-run": "yarn combine-reports && yarn generate-reports",
+    "cy:test-mocha-report": "yarn pre-test-run && yarn cy:test && yarn post-test-run"
   },
   "author": "Kailash",
   "license": "ISC",

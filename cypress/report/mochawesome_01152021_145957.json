@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2020-12-26T07:28:44.303Z",
-    "end": "2020-12-26T07:29:03.569Z",
-    "duration": 19266,
+    "start": "2021-01-15T09:29:47.577Z",
+    "end": "2021-01-15T09:29:57.429Z",
+    "duration": 9852,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "39d48bde-7bfa-48d4-abb0-5fb858626b85",
+      "uuid": "0997b20c-fdd9-46ab-bca5-a43345b60c37",
       "title": "",
       "fullFile": "cypress/integration/examples/login_page.spec.js",
       "file": "cypress/integration/examples/login_page.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "540a82cd-ba23-4679-a928-5b44670362de",
+          "uuid": "715b44c3-9055-4ad2-b3e3-35df937be195",
           "title": "Test login funcationlity ",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Open URL",
               "fullTitle": "Test login funcationlity  Open URL",
               "timedOut": null,
-              "duration": 7747,
+              "duration": 2514,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.visit(\"http://www.testyou.in/Login.aspx\");",
               "err": {},
-              "uuid": "dfd8fdd8-3252-47e2-82e5-dcfbaa0a61a6",
-              "parentUUID": "540a82cd-ba23-4679-a928-5b44670362de",
+              "uuid": "b24915b6-b342-460d-90d5-43c6e31d0dbe",
+              "parentUUID": "715b44c3-9055-4ad2-b3e3-35df937be195",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Login Into Application",
               "fullTitle": "Test login funcationlity  Login Into Application",
               "timedOut": null,
-              "duration": 7430,
+              "duration": 4166,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.get('#ctl00_CPHContainer_txtUserLogin').type('kailash1980');\ncy.get('#ctl00_CPHContainer_txtPassword').type('Sonie8088');\ncy.get('#ctl00_CPHContainer_btnLoginn').click();",
               "err": {},
-              "uuid": "4f70f98c-f3f0-4193-ab14-a339e4e242bb",
-              "parentUUID": "540a82cd-ba23-4679-a928-5b44670362de",
+              "uuid": "d608f66c-d95e-4955-ac19-fd92aa49822a",
+              "parentUUID": "715b44c3-9055-4ad2-b3e3-35df937be195",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Logout From Application",
               "fullTitle": "Test login funcationlity  Logout From Application",
               "timedOut": null,
-              "duration": 2059,
+              "duration": 1708,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "cy.get('#ctl00_headerTopStudent_lnkbtnSignout').click();",
               "err": {},
-              "uuid": "33968c7e-bc4e-499b-b24b-47127c2274ac",
-              "parentUUID": "540a82cd-ba23-4679-a928-5b44670362de",
+              "uuid": "4a54c265-2f06-4feb-9477-2ee22768aef1",
+              "parentUUID": "715b44c3-9055-4ad2-b3e3-35df937be195",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "dfd8fdd8-3252-47e2-82e5-dcfbaa0a61a6",
-            "4f70f98c-f3f0-4193-ab14-a339e4e242bb",
-            "33968c7e-bc4e-499b-b24b-47127c2274ac"
+            "b24915b6-b342-460d-90d5-43c6e31d0dbe",
+            "d608f66c-d95e-4955-ac19-fd92aa49822a",
+            "4a54c265-2f06-4feb-9477-2ee22768aef1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 17236,
+          "duration": 8388,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -132,7 +132,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "cypress/reports/mochawesome-report",
+        "reportDir": "cypress/report",
         "overwrite": false,
         "html": false,
         "json": true,
