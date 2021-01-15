@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-01-15T09:30:03.375Z",
-    "end": "2021-01-15T09:30:08.771Z",
-    "duration": 5396,
+    "start": "2021-01-15T09:49:21.042Z",
+    "end": "2021-01-15T09:49:25.628Z",
+    "duration": 4586,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4d51843c-5074-4275-9054-1918ebd45701",
+      "uuid": "42c491d4-a46b-4b22-ad36-ae547f4adca7",
       "title": "",
       "fullFile": "cypress/integration/examples/shadow_dom.js",
       "file": "cypress/integration/examples/shadow_dom.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7063e093-d406-4d3a-99b8-d522ad19b5fe",
+          "uuid": "f4c49af8-c712-442c-a8a5-62e6dffb8dac",
           "title": "Example to demonstrate the handling of Shadow Dom in Cypress",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Input a text in the input box and after search validate the URL",
               "fullTitle": "Example to demonstrate the handling of Shadow Dom in Cypress Input a text in the input box and after search validate the URL",
               "timedOut": null,
-              "duration": 3780,
+              "duration": 3300,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.get('book-app').shadow().find('app-header').find('.toolbar-bottom').find('book-input-decorator').find('#input').type('Science').click().url('contains', 'explore?q=Science');",
               "err": {},
-              "uuid": "f17c6123-d424-42c0-b5e8-659b5d0e7f89",
-              "parentUUID": "7063e093-d406-4d3a-99b8-d522ad19b5fe",
+              "uuid": "1877a1a6-408c-4a17-9408-c40fbbe6c5f1",
+              "parentUUID": "f4c49af8-c712-442c-a8a5-62e6dffb8dac",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "f17c6123-d424-42c0-b5e8-659b5d0e7f89"
+            "1877a1a6-408c-4a17-9408-c40fbbe6c5f1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3780,
+          "duration": 3300,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -94,7 +94,7 @@
     },
     "marge": {
       "options": {
-        "reportDir": "cypress/report",
+        "reportDir": "cypress/reports/mochawesome-report",
         "overwrite": false,
         "html": false,
         "json": true,
