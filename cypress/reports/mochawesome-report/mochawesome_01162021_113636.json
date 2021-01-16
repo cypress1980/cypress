@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-01-16T06:06:27.938Z",
+    "end": "2021-01-16T06:06:36.272Z",
+    "duration": 8334,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c79b79c6-97ee-4a6a-ac9c-b196a77f60de",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login_page.spec.js",
+      "file": "cypress/integration/examples/login_page.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "75044343-1923-4c6f-8123-9608d09920a9",
+          "title": "Test login funcationlity ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open URL",
+              "fullTitle": "Test login funcationlity  Open URL",
+              "timedOut": null,
+              "duration": 1752,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://www.testyou.in/Login.aspx\");",
+              "err": {},
+              "uuid": "ab79e743-1e22-4065-8734-de8fd8be94b7",
+              "parentUUID": "75044343-1923-4c6f-8123-9608d09920a9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login Into Application",
+              "fullTitle": "Test login funcationlity  Login Into Application",
+              "timedOut": null,
+              "duration": 3930,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#ctl00_CPHContainer_txtUserLogin').type('kailash1980');\ncy.get('#ctl00_CPHContainer_txtPassword').type('Sonie8088');\ncy.get('#ctl00_CPHContainer_btnLoginn').click();",
+              "err": {},
+              "uuid": "e87300e2-30db-4200-9baa-3a1665c433a1",
+              "parentUUID": "75044343-1923-4c6f-8123-9608d09920a9",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logout From Application",
+              "fullTitle": "Test login funcationlity  Logout From Application",
+              "timedOut": null,
+              "duration": 1181,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#ctl00_headerTopStudent_lnkbtnSignout').click();",
+              "err": {},
+              "uuid": "598f94d8-cec3-40af-975f-224674fee05d",
+              "parentUUID": "75044343-1923-4c6f-8123-9608d09920a9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ab79e743-1e22-4065-8734-de8fd8be94b7",
+            "e87300e2-30db-4200-9baa-3a1665c433a1",
+            "598f94d8-cec3-40af-975f-224674fee05d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6863,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}
