@@ -7,11 +7,11 @@ describe("Test login funcationlity ", () => {
     it("Login Into Application", () => {
         cy.get('#ctl00_CPHContainer_txtUserLogin').type('kailash1980');
         cy.get('#ctl00_CPHContainer_txtPassword').type('Sonie8088');
-        cy.get('#ctl00_CPHContainer_btnLoginn').click();
+        cy.get('#ctl00_CPHContainer_btnLoginn1').click();
 
       });
       it("Logout From Application", () => {
-        cy.get('#ctl00_headerTopStudent_lnkbtnSignout1').click();
+        cy.get('#ctl00_headerTopStudent_lnkbtnSignout').click();
       });
   });
 
