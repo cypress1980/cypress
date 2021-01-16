@@ -11,7 +11,7 @@ describe("Test login funcationlity ", () => {
 
       });
       it("Logout From Application", () => {
-        cy.get('#ctl00_headerTopStudent_lnkbtnSignout1').click();
+        cy.get('#ctl00_headerTopStudent_lnkbtnSignout').click();
       });
   });
 
