@@ -3,7 +3,7 @@ version: 2
 
 jobs:
   build:
-    working_directory: cypress
+    working_directory: cypress/
     docker:
       - image: 'cypress/base:10'
         environment:
@@ -13,7 +13,7 @@ jobs:
       - run: pwd
       - run: ls
   test:
-    working_directory: cypress
+    working_directory: cypress/
     docker:
       - image: 'cypress/base:10'
         environment:
