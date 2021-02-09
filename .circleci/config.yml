@@ -22,7 +22,6 @@ jobs:
       - run:
           name: Running cypress tests
           command: command: $(npm bin)/cypress run
-
 workflows:
   version: 2
   build_and_test:
