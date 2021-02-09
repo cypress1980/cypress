@@ -1,32 +1,9 @@
-
-version: 2
-
-jobs:
-  build:
-    working_directory: ~/cypress
-    docker:
-      - image: 'cypress/base:10'
-        environment:
-          TERM: xterm
-    steps:
-      - checkout
-      - run: pwd
-      - run: ls
-  test:
-    working_directory: ~/cypress
-    docker:
-      - image: 'cypress/base:10'
-        environment:
-          TERM: xterm
-    steps:
-      - run:
-          name: Running cypress tests
-          command: npm run cy:report
+version: 2.1
+orbs:
+ cypress: cypress-io/cypress@1
 workflows:
-  version: 2
-  build_and_test:
-    jobs:
-      - build
-      - test:
-          requires:
-            - build
+ build:
+ jobs:
+ — cypress/run:
+ yarn: true
+ cache-key: ‘yarn-packages-{{ arch }}-{{ checksum “yarn.lock” }}’
