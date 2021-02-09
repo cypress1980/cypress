@@ -20,7 +20,7 @@ jobs:
     steps:
       - run:
           name: Running cypress tests
-          command: $(npm bin)/cypress run
+          command: yarn cypress run
 
 workflows:
   version: 2
