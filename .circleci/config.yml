@@ -1,22 +1,33 @@
-version: 2.1
-orbs:
-  cypress: cypress-io/cypress@1.20.0
+
+version: 2
+
+jobs:
+  build:
+    working_directory: ~/feature/test/package.json
+    docker:
+      - image: 'cypress/base:10'
+        environment:
+          TERM: xterm
+    steps:
+      - checkout
+      - run: pwd
+      - run: ls
+  test:
+    working_directory: ~/feature/test/package.json
+    docker:
+      - image: 'cypress/base:10'
+        environment:
+          TERM: xterm
+    steps:
+      - run:
+          name: Running cypress tests
+          command: cypress run
 
 workflows:
-  build:
+  version: 2
+  build_and_test:
     jobs:
-      - cypress/run:
-          post-steps:
-            - run: 
-                when: always
-                name: Merge MochaAwesome Reports
-                command: npx mochawesome-merge cypress/reports/mochawesome-report/*.json > output.json
-            - run: 
-                when: always
-                name: Create mochawesome html report
-                command: npx marge --reportDir cypress/reports/mochawesome-html-report -t Cypress_Test_Report -p Cypress_HMTL_Report -f Cypress_HMTL_Report --charts true output.json
-   
-            - store_artifacts:
-                path: mochawesome-report
-            - store_test_results:
-                path: cypress/reports
+      - build
+      - test:
+          requires:
+            - build
