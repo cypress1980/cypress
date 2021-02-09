@@ -1,4 +1,4 @@
-version: 2.1
+version: 2
 
 jobs:
   build:
@@ -11,6 +11,11 @@ jobs:
       - checkout
       - run: pwd
       - run: ls
+      - restore_cache:
+          keys:
+            - 'v2-deps-{{ .Branch }}-{{ checksum "package-lock.json" }}'
+            - 'v2-deps-{{ .Branch }}-'
+            - v2-deps-
       - run: npm ci
       - save_cache:
           key: 'v2-deps-{{ .Branch }}-{{ checksum "package-lock.json" }}'
@@ -42,7 +47,7 @@ jobs:
           path: cypress/screenshots
 
 workflows:
-  version: 2.1
+  version: 2
   build_and_test:
     jobs:
       - build
