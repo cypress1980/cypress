@@ -21,7 +21,7 @@ jobs:
     steps:
       - run:
           name: Running cypress tests
-          command: npm run cy:report
+          command: command: $(npm bin)/cypress run
 
 workflows:
   version: 2
