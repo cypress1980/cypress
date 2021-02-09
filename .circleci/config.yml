@@ -20,7 +20,7 @@ jobs:
     steps:
       - run:
           name: Running cypress tests
-          command: yarn cypress run cypress:run:chrome
+          command: $(npm bin)/cypress run
 
 workflows:
   version: 2
