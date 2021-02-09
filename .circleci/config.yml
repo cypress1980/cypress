@@ -18,17 +18,9 @@ jobs:
         environment:
           TERM: xterm
     steps:
-      - attach_workspace:
-          at: ~/
-      - run: ls -la cypress
-      - run: ls -la cypress/integration
       - run:
           name: Running cypress tests
-          command: $(npm bin)/cypress run
-      - store_artifacts:
-          path: cypress/videos
-      - store_artifacts:
-          path: cypress/screenshots
+          command: yarn cypress run cypress:run:chrome
 
 workflows:
   version: 2
