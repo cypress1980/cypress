@@ -1,12 +1,9 @@
 version: 2.1
 orbs:
   cypress: cypress-io/cypress@1
-   - run:
-          name: "Print an env var stored in the Project"
-          command: echo ${PROJECT_ENV_VAR}
+  
 workflows:
   build:
     jobs:
       - cypress/run:
           yarn: true
-          record: true
