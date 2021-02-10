@@ -7,3 +7,5 @@ workflows:
       - cypress/run:
           yarn: true
           record: true
+environment:
+      CYPRESS_RECORD_KEY: aeed922c-98af-4143-9e77-f97c6c900754
