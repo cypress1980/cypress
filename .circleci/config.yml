@@ -1,8 +1,6 @@
 version: 2.1
 orbs:
   cypress: cypress-io/cypress@1
-  environment:
-      CYPRESS_RECORD_KEY: aeed922c-98af-4143-9e77-f97c6c900754
 workflows:
   build:
     jobs:
