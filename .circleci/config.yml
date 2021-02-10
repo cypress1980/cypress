@@ -1,32 +1,7 @@
-version: 2
-
-jobs:
-  build:
-    working_directory: ~/public
-    docker:
-      - image: 'cypress/base:10'
-        environment:
-          TERM: xterm
-    steps:
-      - checkout
-      - run: pwd
-      - run: ls
-  test:
-    working_directory: ~/public
-    docker:
-      - image: 'cypress/base:10'
-        environment:
-          TERM: xterm
-    steps:
-      - run:
-          name: Running cypress tests
-          command: yarn cypress run
-
+ersion: 2.1
+orbs:
+  cypress: cypress-io/cypress@1
 workflows:
-  version: 2
-  build_and_test:
+  build:
     jobs:
-      - build
-      - test:
-          requires:
-            - build
+      - cypress/run
