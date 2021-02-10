@@ -4,6 +4,6 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/run: --record --key aeed922c-98af-4143-9e77-f97c6c900754
+      - cypress/run:
           yarn: true
           record: true
