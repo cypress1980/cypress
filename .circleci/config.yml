@@ -11,6 +11,7 @@ workflows:
           store_artifacts: true
           parallel: true
           parallelism: 2
+          group: 2 machines
           post-steps:
             - store_artifacts:
                 path: reports
