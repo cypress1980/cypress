@@ -9,6 +9,8 @@ workflows:
           yarn: true
           record: true
           store_artifacts: true
+          parallel: true
+          parallelism: 2
           post-steps:
             - store_artifacts:
                 path: reports
