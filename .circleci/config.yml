@@ -7,6 +7,6 @@ workflows:
     jobs:
       - cypress/run:
           yarn: true
-          command: yarn run cy:report
           record: true
-          store_artifacts: true
+          parallel: true
+          parallelism: 4
