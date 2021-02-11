@@ -7,8 +7,6 @@ workflows:
     jobs:
       - cypress/run:
           yarn: true
+          command: yarn run cy:report
           record: true
           store_artifacts: true
-          post-steps:
-            - store_artifacts:
-                path: reports
