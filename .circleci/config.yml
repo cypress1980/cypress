@@ -11,4 +11,4 @@ workflows:
           store_artifacts: true
           post-steps:
             - store_artifacts:
-                path: reports/mochawesome-html-report
+                path: reports
