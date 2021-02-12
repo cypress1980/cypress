@@ -4,13 +4,11 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/install:
-          build: npm run build
+      - cypress/install
       - cypress/run:
           requires:
             - cypress/install
-          yarn: true
           record: true
           parallel: true
-          parallelism: 3
+          parallelism: 2
           group: 2 machines
