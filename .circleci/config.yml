@@ -5,12 +5,12 @@ workflows:
   build:
     jobs:
       - cypress/install:
-       build: npm run build
+          build: npm run build
       - cypress/run:
           requires:
             - cypress/install
           yarn: true
           record: true
           parallel: true
-          parallelism: 2
+          parallelism: 3
           group: 2 machines
