@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-01-16T05:53:41.712Z",
-    "end": "2021-01-16T05:53:45.951Z",
-    "duration": 4239,
+    "start": "2021-03-10T03:57:30.830Z",
+    "end": "2021-03-10T03:57:36.948Z",
+    "duration": 6118,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "78113d0c-7aaf-4769-90bd-be60ff50739c",
+      "uuid": "a118eb0c-cce1-432a-8cb6-2328e6fe2ff4",
       "title": "",
       "fullFile": "cypress/integration/examples/shadow_dom.js",
       "file": "cypress/integration/examples/shadow_dom.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "93749826-26e8-4788-b617-17d5cf8493ae",
+          "uuid": "343941bf-b815-4862-b2d5-6150746e2f74",
           "title": "Example to demonstrate the handling of Shadow Dom in Cypress",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Input a text in the input box and after search validate the URL",
               "fullTitle": "Example to demonstrate the handling of Shadow Dom in Cypress Input a text in the input box and after search validate the URL",
               "timedOut": null,
-              "duration": 2934,
+              "duration": 4045,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.get('book-app').shadow().find('app-header').find('.toolbar-bottom').find('book-input-decorator').find('#input').type('Science').click().url('contains', 'explore?q=Science');",
               "err": {},
-              "uuid": "9559c90b-4d56-4fbe-9d64-01ef0ab4c014",
-              "parentUUID": "93749826-26e8-4788-b617-17d5cf8493ae",
+              "uuid": "c5323a82-1cea-419d-a352-7bd330bde2dd",
+              "parentUUID": "343941bf-b815-4862-b2d5-6150746e2f74",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9559c90b-4d56-4fbe-9d64-01ef0ab4c014"
+            "c5323a82-1cea-419d-a352-7bd330bde2dd"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2934,
+          "duration": 4045,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
