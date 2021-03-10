@@ -13,14 +13,10 @@
   "author": "Kailash",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^6.2.0",
+    "cypress": "^6.5.0",
     "mocha": "^8.2.1",
     "mochawesome": "^6.2.1",
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^5.1.0"
-  },
-  "dependencies": {
-    "osenv": "^0.1.5",
-    "yarn-install": "^1.0.0"
   }
 }
